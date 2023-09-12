@@ -1,14 +1,16 @@
 package guru.springframework.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.math.BigDecimal;
 
 /**
  * Created by jt on 1/10/17.
  */
 @Entity
+@Table(name = "Product")
 public class Product {
 
     @Id
@@ -18,7 +20,7 @@ public class Product {
     private BigDecimal price;
     private String imageUrl;
     private boolean messageReceived;
-    private Integer messageCount = 0; //init to zero
+    private Integer messageCount = 0; // init to zero
 
     public Long getId() {
         return id;

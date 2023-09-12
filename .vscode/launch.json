@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "SpringBootRabbitMQApplication",
+      "request": "launch",
+      "mainClass": "SpringBootRabbitMQApplication",
+      "projectName": "spring-boot-rabbitmq"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-SpringBootRabbitMQApplication<spring-boot-rabbitmq>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "guru.springframework.SpringBootRabbitMQApplication",
+      "projectName": "spring-boot-rabbitmq",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
